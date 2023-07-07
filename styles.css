@@ -16,6 +16,7 @@ body {
 header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   box-sizing: border-box;
   padding: 10px 0;
@@ -102,7 +103,7 @@ header ul a:hover{
   flex-direction: column;
   gap: 20px;
   padding: 25px;
-  padding-bottom: 35px ;
+  padding-bottom: 35px;
   position: absolute;
   right: 4%;
   bottom: -20%;
@@ -158,4 +159,78 @@ footer a:hover{
 /* none */
 .hamburguer, .close{
   display: none;
+}
+
+@media (max-width: 900px){
+  header ul{
+    gap: 10px;
+    width: auto;
+  }
+  .home{
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  .home .description{
+    max-width: 85%;
+  }
+  .home .images{
+    max-width: 90%;
+  }
+  .author{
+    width: 80%;
+  }
+  .author img{
+    width: 36.59px;
+    height: 36.59px;
+  }
+  .author .name{
+    font-size: 12px;
+  }
+  .author .profession{
+    font-size: 10px;
+  }
+  .author .designed{
+    font-size: 18px;
+    max-width: 210px;
+  }
+}
+@media (max-width: 550px){
+  .hamburguer{
+    display: flex;
+  }
+  body{
+    padding: 5%;
+  }
+  .home{
+    align-items: normal;
+  }
+  .home .description{
+    gap: 20px;
+  }
+  .home .description p{
+    line-height: 17.07px;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 250px;
+  }
+  .home .description h1{
+    font-size: 36px;
+  }
+  .home .images{
+    max-width: 100%;
+  }
+  .read-more a{
+    font-size: 14px;
+  }
+  .author{
+    gap: 10px;
+    padding: 15px;
+    padding-bottom: 25px;
+    max-width: 70%;
+  }
+  header ul{
+    display: none;
+  }
 }
