@@ -1,8 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* general styles */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
 
 *{
   margin: 0;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #181719;
+  color: #FFFFFF;
+  padding: 2% 6%;
+  font-size: 24px;
+}
+
+/* header styles */
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.logo{
+  font-family: 'Crimson Pro', serif;
+  font-weight: 200;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+header ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+header ul a{
+  cursor: pointer;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 7px 0;
+}
+header ul a:hover{
+  border-bottom: 3px solid white;
+}
+
+/* home styles */
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  margin: 15% 0;
+}
+.home .description{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 35%;
+}
+.home .description h1{
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 48px;
+}
+.home .description p{
+  font-weight: 400;
+  line-height: 29.26px;
+}
+.read-more{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.read-more a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.read-more:hover,
+.read-more a:hover{
+  color: #f96039;
+}
+
+/* images styles */
+.home .images{
+  max-width: 58%;
+  position: relative;
+}
+.home .images > img{
+  max-width: 100%;
+}
+.author{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  padding-bottom: 35px ;
+  position: absolute;
+  right: 4%;
+  bottom: -20%;
+  background-color: #181719;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  max-width: 48%;
+}
+.author img{
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.author .data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.author .about{
+  display: flex;
+  gap: 10px;
+}
+.author .name{
+  font-weight: 500;
+  font-size: 14px;
+}
+.author .profession{
+  font-weight: 500;
+  font-size: 12px;
+  color: #828282;
+}
+.author .designed{
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  max-width: 75%;
+}
+
+/* footer styles */
+footer p{
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #A9A9A9;
+}
+footer a{
+  font-weight: 700;
+  color: #A9A9A9;
+}
+footer a:hover{
+  color: #f96039;
+}
+
+/* none */
+.hamburguer, .close{
+  display: none;
 }
