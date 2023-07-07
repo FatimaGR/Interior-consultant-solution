@@ -9,24 +9,26 @@
     />
     <link rel="icon" href="devchallenges.png" />
     <title>Devchallenges</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/global.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <header>
       <p class="logo">This interior</p>
-      <div class="hamburguer">
+      <div class="hamburguer" id="open">
         <i class='bx bx-menu bx-lg'></i>
       </div>
-      <ul>
-        <div class="close">
-          <i class='bx bx-x'></i>
+      <div class="menu" id="menu">
+        <div class="close" id="close">
+          <i class='bx bx-x bx-lg'></i>
         </div>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Collection</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="home">
@@ -58,5 +60,7 @@
         <a href="https://devchallenges.io/portfolio/FatimaGR">FatimaGR</a> 
         - devChallenges.io</p>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
